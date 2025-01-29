@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <h2>Enter Temperature</h2>
+          <form id="converter-form">
+            <label for="degree">Degree</label>
+            <div class="degree-container">
+              <input type="number" id="degree" value="0">
+              <select id="unit-from">
+                <option value="Celsius">°C</option>
+                <option value="Fahrenheit">°F</option>
+              </select>
+            </div>
+    
+            <label for="convert">Convert In</label>
+            <select id="unit-to">
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              <option value="Celsius">Celsius (°C)</option>
+            </select>
+    
+            <button type="button" id="convert-btn">Convert <i class="fas fa-arrow-right icon"></i></button>
+          </form>
+        </div>
+        <div class="right">
+          <p id="result">32 °F</p>
+        </div>
+      </div>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
